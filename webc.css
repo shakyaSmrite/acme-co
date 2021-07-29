@@ -1,0 +1,87 @@
+* {
+  font-family: Lato, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navigation Section */
+
+.navbar ul {
+  /* remove bullets from unordered list */
+  list-style-type: none;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  color: #6b8897;
+  padding-left: 4vw;
+  width: 33vw;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #7693a2;
+}
+
+.nav-logbutton {
+  border: 2px solid #32c5ff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  background-color: azure;
+}
+
+/* flex box for navigation */
+
+/* parent class */
+.navg-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 9vh;
+  font-style: normal;
+  background-color: azure;
+  box-sizing: border-box;
+}
+
+/* child class */
+.navbar ul {
+  width: 58vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+/* Body Section */
+.sec1 {
+  background-image: url("triangle-background.png");
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .burger {
+    height: 7vh;
+    width: 92vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 4vw;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
